@@ -28,13 +28,18 @@
 // sum(a, b);
 // // tsc --watch ten_file
 export {};
-const product = [
+type Product = {
+  id: number;
+  name: string;
+};
+const product: Product[] = [
   { id: 1, name: "productA" },
   { id: 2, name: "productB" },
   { id: 3, name: "productC" },
 ];
-function show<T, U>(a: T, b: U): [T, U] {
-  return [a, b];
+function show<T extends Product[]>(product: T): void {
+  console.log(product);
+  const result = product.map((item) => `<div>${item.name}</div>`);
 }
 
-show(10, 20);
+show(product);
