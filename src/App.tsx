@@ -13,7 +13,7 @@ import type { IProduct } from "./types/product";
 import AdminLayout from "./pages/layouts/AdminLayout";
 import WebsiteLayout from "./pages/layouts/WebsiteLayout";
 import Dashboard from "./pages/Dashboard";
-import ProductManager from "./pages/layouts/ProductManager";
+import ProductManager from "./pages/ProductManager";
 import Home from "./pages/Home";
 
 function App() {
