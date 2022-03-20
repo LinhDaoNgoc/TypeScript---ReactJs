@@ -14,6 +14,7 @@ import AdminLayout from "./pages/layouts/AdminLayout";
 import WebsiteLayout from "./pages/layouts/WebsiteLayout";
 import Dashboard from "./pages/Dashboard";
 import ProductManager from "./pages/ProductManager";
+import ProductAdd from "./pages/ProductAdd";
 import Home from "./pages/Home";
 
 function App() {
@@ -72,7 +73,10 @@ function App() {
           <Route path="admin" element={<AdminLayout />}>
             <Route index element={<Navigate to="dashboard" />} />
             <Route path="dashboard" element={<Dashboard />} />
-            <Route path="products" element={<ProductManager />} />
+            <Route path="products">
+              <Route element={<ProductManager />} />
+              <Route path="add" element={<ProductAdd />} />
+            </Route>
           </Route>
         </Routes>
       </main>
