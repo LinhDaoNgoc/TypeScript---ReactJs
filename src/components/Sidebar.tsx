@@ -7,13 +7,13 @@ const Sidebar = (props: Props) => {
   return (
     <nav
       id="sidebarMenu"
-      className="col-md-3 col-lg-2 d-md-block bg-secondary sidebar collapse"
+      className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
     >
       <div className="position-sticky pt-3">
         <ul className="nav flex-column">
           <li className="nav-item">
             <NavLink
-              className="nav-link active text-white"
+              className="nav-link active"
               aria-current="page"
               to="/admin/dashboard"
             >
@@ -22,7 +22,7 @@ const Sidebar = (props: Props) => {
           </li>
           <li className="nav-item">
             <NavLink
-              className="nav-link active text-white"
+              className="nav-link active"
               aria-current="page"
               to="/admin/products"
             >

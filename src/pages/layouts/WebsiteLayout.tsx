@@ -6,7 +6,7 @@ type Props = {};
 const WebsiteLayout = (props: Props) => {
   return (
     <div>
-      <header>Header</header>
+      <header>Header website</header>
       <main>
         <Outlet />
       </main>
