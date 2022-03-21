@@ -23,15 +23,15 @@ const AdminLayout = (props: Props) => {
           <span className="navbar-toggler-icon" />
         </button>
         <input
-          className="form-control form-control-white w-100"
+          className="form-control form-control-dark w-100"
           type="text"
           placeholder="Search"
           aria-label="Search"
         />
         <div className="navbar-nav">
           <div className="nav-item text-nowrap">
-            <a className="nav-link px-3 " href="/">
-              Home
+            <a className="nav-link px-3" href="#">
+              Sign out
             </a>
           </div>
         </div>
@@ -49,7 +49,7 @@ const AdminLayout = (props: Props) => {
               </div>
             </div>
             <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-              <h1 className="h2">Dashboard</h1>
+              <h1 className="h2">D ashboard</h1>
             </div>
             <Outlet />
           </main>
