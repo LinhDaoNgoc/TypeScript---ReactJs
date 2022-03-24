@@ -59,7 +59,7 @@ function App() {
           <Route path="/" element={<WebsiteLayout />}>
             <Route index element={<Home />} />
             <Route path="product">
-              <Route index element={<h1>Hien thi san pham</h1>} />
+              <Route index element={<h1>Hiển thị sản phẩm </h1>} />
               <Route path=":id" element={<ProductDetail />} />
             </Route>
             <Route path="about" element={<h1>About page</h1>} />
@@ -77,7 +77,7 @@ function App() {
               />
               <Route
                 path="add"
-                element={<ProductAdd name="Dat" onAdd={onHandleAdd} />}
+                element={<ProductAdd name="Linh" onAdd={onHandleAdd} />}
               />
             </Route>
           </Route>
