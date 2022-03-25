@@ -1,12 +1,15 @@
-import React from "react";
+import React from 'react'
 
 type ShowInfoProps = {
-  name: string;
-  age: number;
-};
+    name: string,
+    age: number
+}
 
-const ShowInfo = ({ name }: ShowInfoProps) => {
-  return <div>Hi {name}</div>;
-};
+const ShowInfo = ({name}: ShowInfoProps) => {
 
-export default ShowInfo;
+  return (
+    <div>Xin chào {name}</div>
+  )
+}
+
+export default ShowInfo

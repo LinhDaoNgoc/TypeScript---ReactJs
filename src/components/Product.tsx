@@ -1,14 +1,16 @@
-import React from "react";
+import React from 'react'
 
 type ProductProps = {
-  data: {
-    id: number;
-    name: string;
-  };
-};
+    data: {
+        id: number,
+        name: string
+    }
+}
 
-const Product = ({ data: { id, name } }: ProductProps) => {
-  return <div>{name}</div>;
-};
+const Product = ({ data: { id, name} }: ProductProps) => {
+  return (
+    <div>{name}</div>
+  )
+}
 
-export default Product;
+export default Product
