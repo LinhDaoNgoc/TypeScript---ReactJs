@@ -21,8 +21,8 @@ const ProductAdd = (props: ProductAddProps) => {
     }
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-        <input type="text" placeholder='Ten san pham' {...register('name')} />
-        <input type="number" placeholder='Gia san pham' {...register('price')} />
+        <input type="text" placeholder='Tên Sản Phẩm' {...register('name')} />
+        <input type="number" placeholder='Giá Sản Phẩm' {...register('price')} />
         <button>Add</button>
     </form>
   )

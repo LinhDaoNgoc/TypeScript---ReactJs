@@ -16,6 +16,7 @@ import ProductDetail from './pages/ProductDetail';
 import ProductAdd from './pages/ProductAdd';
 import ProductEdit from './pages/ProductEdit';
 import PrivateRouter from './components/PrivateRouter';
+import Signin from './pages/Signin';
 
 
 function App() {
@@ -80,7 +81,7 @@ function App() {
                     <Route path="add" element={<ProductAdd name="Linh" onAdd={onHandleAdd}/>} />
                 </Route>
             </Route>
-            <Route path="login" element={<h1>Login page</h1>} />
+            <Route path="login" element={<Signin></Signin>} />
           </Routes>
         </main>
     </div>
