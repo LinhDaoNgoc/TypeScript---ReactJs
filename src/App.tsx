@@ -80,6 +80,7 @@ function App() {
                     <Route path="add" element={<ProductAdd name="Linh" onAdd={onHandleAdd}/>} />
                 </Route>
             </Route>
+            <Route path="login" element={<h1>Login page</h1>} />
           </Routes>
         </main>
     </div>
