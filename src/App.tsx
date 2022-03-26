@@ -77,7 +77,7 @@ function App() {
                 <Route path="products">
                     <Route index element={<PrivateRouter><ProductManager products={products} onRemove={removeItem}/></PrivateRouter>} />
                     <Route path=":id/edit" element={<ProductEdit onUpdate={onHandleUpdate}/>}/>
-                    <Route path="add" element={<ProductAdd name="Dat" onAdd={onHandleAdd}/>} />
+                    <Route path="add" element={<ProductAdd name="Linh" onAdd={onHandleAdd}/>} />
                 </Route>
             </Route>
           </Routes>
