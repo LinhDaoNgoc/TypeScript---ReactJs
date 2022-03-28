@@ -8,7 +8,7 @@ type ShowInfoProps = {
 const ShowInfo = ({name}: ShowInfoProps) => {
 
   return (
-    <div>Hi {name}</div>
+    <div>Xin chao {name}</div>
   )
 }
 
